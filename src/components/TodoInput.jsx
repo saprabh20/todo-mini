@@ -19,10 +19,10 @@ const TodoInput = ({ addTodo }) => {
         }
     }
     return (
-        <div className="w-full lg:w-[50%] flex flex-col items-center">
+        <div className="w-full lg:w-[80%] flex flex-col items-center">
             <TextInput
                 type="text"
-                placeholder="Enter a new task"
+                placeholder="Enter a new task ↵ "
                 className="w-full mb-2"
                 onChange={(e) => {
                     setInput(e.target.value);
@@ -34,16 +34,14 @@ const TodoInput = ({ addTodo }) => {
                     }
                 }}
             />
-            <Button
-                outline
-                gradientDuoTone="greenToBlue"
-                className="w-[40%]"
+            <button
+                className="w-[30%] h-10 rounded-lg text-[#F5EFFF] bg-[#A294F9] hover:bg-violet-500"
                 onClick={() => {
                     addTask();
                 }}
             >
                 Add Task
-            </Button>
+            </button>
         </div>
     );
 };

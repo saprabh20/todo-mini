@@ -6,11 +6,15 @@ import React from 'react'
 
 const HeaderBar = () => {
   return (
-      <Navbar fluid rounded className="flex items-center justify-center">
+      <Navbar
+          fluid
+          rounded
+          className="flex items-center justify-center w-[100%] bg-[#E5D9F2]"
+      >
           <Navbar.Brand>
-              <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+              <h1 className="self-center text-3xl font-bold text-[#A294F9] hover:text-violet-500">
                   Todo App
-              </span>
+              </h1>
           </Navbar.Brand>
       </Navbar>
   );
